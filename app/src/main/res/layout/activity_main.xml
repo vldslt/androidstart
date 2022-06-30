@@ -8,30 +8,12 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World Again!" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="fsjdfhsjfh sjf hsdjf hsdjkfh dsjkfh skjdhfkj dshfkjsdh kjsjdhfjsdhf ksjdhf kjskjsdf hsdkjhf dksjfhk sjdfh skdjfh ksdjh f jksdfskjdfh fsdkjfsdkljfslkj lsdfk jsdlk"
-        android:textSize="22sp" />
-
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:padding="16dp"
-        android:text="Test" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:gravity="center_horizontal"
-        android:text="Test" />
+        android:padding="36dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Задание 1" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -39,30 +21,57 @@
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp">
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:backgroundTint="@color/design_default_color_error"
+                android:text="BUTTON 1" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
                 android:backgroundTint="@color/black"
-                android:text="Button" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="КНОПКА" />
+                android:text="КНОПКА 2" />
         </LinearLayout>
     </ScrollView>
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="Введите сюда"
+        android:autofillHints="no" />
+
     <Switch
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:fontFamily="sans-serif-medium"
+        android:checked="true"
+        android:text="выключатель"/>
 
     <CheckBox
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <CalendarView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="Поставить галочку"
+        android:textSize="16sp" />
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:checked="false"
+        android:text="ToggleButton"
+        android:textOff="ТУДЫ"
+        android:textOn="СЮДЫ" />
 </LinearLayout>
